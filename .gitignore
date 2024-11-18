@@ -1,3 +1,22 @@
+# exclude everything in directory build
+build/**
+
+# exclude every .jar files except module2.jar
+*.jar
+!module2.jar
+
+# ignore file
+/application-local.properties*.
+
+# ignore directories except workspace.xml
+/.idea
+/.idea_copy
+!.idea_copy/workspace.xml
+
+# exclude build directory except build files and module2.jar
+/build/
+!build.*
+
 # Compiled class file
 *.class
 
@@ -11,7 +30,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
